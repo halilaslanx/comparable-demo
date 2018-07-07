@@ -10,6 +10,15 @@ public class ComparatorDemo {
 		
 		// ==========  COMPARATOR  =============
 		
+		System.out.println(" -- Unsorted List --");
+		Utility.printEmployeeList(employees);
+
+		System.out.println("\n -- Sorted List : Natural Order --");
+		Collections.sort(employees);
+		Utility.printEmployeeList(employees);
+		
+		
+		
 		System.out.println("\n -- Sorted List : Comparator (ID) --");
 		// before JAVA 8		
 		EmployeeComparator byID = new EmployeeComparator();
